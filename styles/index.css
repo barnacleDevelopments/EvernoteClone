@@ -1,0 +1,218 @@
+html, body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+tbody, thead, tr {
+  border-color: transparent; 
+  border-style: solid; 
+  border-width: 0;
+}
+
+.app-wrapper {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0px;
+  display: flex;
+}
+
+.app-wrapper > div:nth-of-type(3) {
+  flex-grow: 450;
+}
+
+.user-menu {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.user-text {
+  padding-left: 10px;
+}
+
+.user-logo img {
+  width: 50px;
+}
+
+.menu-column {
+  background-color: #4F4F4F;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  padding: 20px 20px 20px 20px;
+  font-size: large;
+}
+
+.notebook-search, .notebook-create, .notebook-list {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  box-sizing: border-box ;
+  cursor: pointer;
+}
+
+.notebook-search {
+  background-color: #828282;
+}
+
+.notebook-create {
+  background-color: #27AE60;
+}
+
+.note-item:hover {
+  background-color: #C4C4C450 !important;
+}
+
+.note-item i:hover {
+  color: rgb(143, 35, 35);
+  cursor: pointer;
+}
+
+.notebook-list-item.active {
+  background-color: #828282;
+  border: none;
+}
+
+.notebook-list {
+  background-color: transparent;
+}
+
+.notebook-list-btn {
+  background-color: #198754;
+  display: flex;
+  justify-content: space-between;
+  transition: background-color .2s ease-in-out;
+}
+
+.notebook-list-btn:hover {
+  background-color:  #19875490;
+}
+
+.notebook-list > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notebook-list > li i::after {
+  content: none;
+  border: none !important;
+}
+
+.notebook-list-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.note-list-column {
+  background-color: #828282;
+  padding: 0px;
+}
+
+.note-column-header {
+  color: white;
+}
+
+.note-table {
+  width: 100%;
+}
+
+.note-list-column th {
+  color: white;
+  font-size: .8em;
+}
+
+.note-list tr {
+  cursor: pointer;
+}
+
+.note-list tr td:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+}
+
+.note-list tr:nth-child(odd) {
+  background-color: #C4C4C4;
+}
+
+.note-list-column td {
+  font-size: .6em;
+}
+
+.note-list-column {
+  overflow-y: scroll;
+}
+
+.note-edit-column {
+  background-color: #C4C4C4;
+  overflow-y: scroll;
+  position: relative;
+  padding-top: 105px;
+  z-index: 100;
+}
+
+.note-editor-header {
+  height: 105px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  background-color: #C4C4C4;
+  left: 0px;
+}
+
+.note-form-title {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background-color: #C4C4C4;
+  outline: none;
+  border-bottom: 1px solid #4F4F4F;
+  font-size: 30px;
+}
+
+.note-form-content {
+  outline: none;
+}
+
+.add-notebook-btn {
+  cursor: pointer;
+}
+
+.expand-btn {
+  background-color: #828282;
+  color: #C4C4C4;
+  cursor: pointer;
+}
+
+.expand-btn:hover {
+  background-color: white;
+}
+
+/* Forms and Menues */
+
+
+.form-btn-group {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.menu {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  background-color: #4F4F4F70;
+}
+
+.menu > div {
+  background-color: #4F4F4F;
+  color: white;
+  padding: 20px 20px 20px 20px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Edit/Delete Pasta</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+  <h3>Edit/Delete Pasta</h3>
+  <form id="wine-edit-form" class="row g-3 container mt-2">
+    <input class="form-control" type="hidden" id="wineId" autofocus>
+    <div class="col-sm-6">
+      <label class="form-label">Enter Name:</label>
+      <input class="form-control" type="text" id="name" autofocus>
+      <div id="name-validation-message" class="form-text"></div>
+    </div>
+    <div class="col-sm-6">
+      <label class="form-label">Select Category:</label>
+      <select class="form-select" id="category">
+        <option>Red</option>
+        <option>White</option>
+        <option>Desert</option>
+      </select>
+    </div>
+    <div class="col-sm-6">
+      <label class="form-label">Select Type:</label>
+      <select class="form-select" id="type"></select>
+    </div>
+    <div class="col-sm-6">
+      <label class="form-label">Year:</label>
+      <select class="form-control" id="year"></select>
+    </div>
+    <div class="col-sm-6">
+      <label class="form-label">Enter Winery:</label>
+      <input class="form-control" type="text" id="winery">
+      <div id="winery-validation-message" class="form-text"></div>
+    </div>
+    <div class="col-sm-6">
+      <label class="form-label">Enter Year Purchased:</label>
+      <select class="form-control" id="yearPurchased"></select>
+    </div>
+    <div class="col-sm-6">
+      <label class="form-label">Enter Rating:</label>
+      <select class="form-select" id="rating">
+        <option selected>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+      </select>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Update Wine</button>
+  </form>
+
+  <script src="editwin.js"></script>
+
+</body>
+
+</html>

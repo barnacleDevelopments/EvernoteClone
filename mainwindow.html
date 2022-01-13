@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/2cea744347.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles/index.css">
+
+  <title>Evernote Clone</title>
+</head>
+
+<body>
+  <div class="app-wrapper">
+    <div class="menu-column" style="min-width: 250px; height: 100%;">
+      <div class="row user-menu align-items-center">
+        <div class="col-3 user-logo">
+          <img src="./images/icon.png" alt="">
+        </div>
+        <div class="col-9 user-text">
+          Devin Davis
+        </div>
+      </div>
+      <div class="d-grid gap-2">
+        <button class="add-note-btn text-uppercase btn btn-success mb-3 rounded-0 fw-bold disabled" type="button">Create
+          Note</button>
+      </div>
+      <div class="notebook-list-btn px-3 py-1">
+        <a id="get-notebooks-btn" data-bs-toggle="collapse" href="#collapseNotebooks" role="button"
+          aria-expanded="false" aria-controls="collapseNotebooks">
+          Notebooks
+        </a>
+        <a class="add-notebook-btn"><i class="fas fa-plus-circle"></i></a>
+      </div>
+      <div class="collapse show" id="collapseNotebooks">
+        <div class="card card-body rounded-0 p-0">
+          <ul class="list-group notebook-list mb-0"></ul>
+        </div>
+      </div>
+    </div>
+    <div class="note-list-column border border-secondary" style="min-width: 450px; height: 100%;">
+    </div>
+    <div class="note-edit-column ps-3" style="width: 450px; height: 100%;"></div>
+  </div>
+
+  <script>
+    if (typeof module === 'object') { window.module = module; module = undefined; }
+  </script>
+  <script src="node_modules/jquery/dist/jquery.slim.min.js" crossorigin="anonymous"></script>
+  <script src="node_modules/@popperjs/core/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <script src="mainwin.js"></script>
+
+  <script>if (window.module) module = window.module;</script>
+</body>
+
+</html>

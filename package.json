@@ -1,0 +1,31 @@
+{
+  "name": "evernote clone",
+  "version": "1.0.0",
+  "description": "A fun clone of evernote using electron.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "author": "Devin Davis",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.10.1",
+    "bootstrap": "^5.1.1",
+    "dotenv": "^10.0.0",
+    "electron": "^6.1.12",
+    "jquery": "^3.0.0",
+    "knex": "^0.95.12",
+    "moment": "^2.29.1",
+    "mssql": "^7.2.1",
+    "reflect-metadata": "^0.1.13",
+    "save": "^2.4.0",
+    "sqlite3": "^4.2.0",
+    "tedious": "^14.0.0",
+    "typeorm": "^0.2.38"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "electron-builder": "^21.2.0"
+  }
+}
